@@ -1,0 +1,49 @@
+[
+    {
+        "url": "/user",
+        "method": "get",
+        "httpStatus": 200,
+        "data": [
+            {
+                "userId": 1,
+                "name": "John Doe",
+                "access": "Admin"
+            },
+            {
+                "userId": 2,
+                "name": "Robert Lock",
+                "access": "Basic"
+            }
+        ],
+        "responseStructure": "ArrayObject",
+        "searchKey": "userId"
+    },
+    {
+        "url": "/aprove-document",
+        "method": "post",
+        "httpStatus": 204,
+        "data": [],
+        "responseStructure": "ArrayObject"
+    },
+    {
+        "url": "/document",
+        "method": "get",
+        "httpStatus": 200,
+        "data": [
+            {
+                "documentId": 1,
+                "userId": 1,
+                "type": "RG",
+                "value": "82801982"
+            },
+            {
+                "documentId": 2,
+                "userId": 2,
+                "type": "CPF",
+                "value": "02901903817"
+            }
+        ],
+        "responseStructure": "ArrayObject",
+        "searchKey": "*"
+    }
+]
