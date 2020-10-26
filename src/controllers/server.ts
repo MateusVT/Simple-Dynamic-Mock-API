@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import * as HttpStatus from 'http-status-codes';
 import router from '../routes/routes';
-import { version } from '../../package.json'
 
 export function status(req: Request, res: Response): void {
   res.status(HttpStatus.OK).json({
