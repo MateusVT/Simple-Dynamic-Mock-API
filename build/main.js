@@ -541,7 +541,9 @@ var routes_1 = tslib_1.__importDefault(__webpack_require__(/*! ../routes/routes 
 function status(req, res) {
     res.status(HttpStatus.OK).json({
         name: req.app.locals.name,
-        version: req.app.locals.version
+        version: req.app.locals.version,
+        author: "Mateus V. Torres",
+        contact: "mtsvtorres@gmail.com",
     });
 }
 exports.status = status;

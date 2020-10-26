@@ -1,11 +1,14 @@
 import { Request, Response } from 'express';
 import * as HttpStatus from 'http-status-codes';
 import router from '../routes/routes';
+import { version } from '../../package.json'
 
 export function status(req: Request, res: Response): void {
   res.status(HttpStatus.OK).json({
     name: req.app.locals.name,
-    version: req.app.locals.version
+    version: req.app.locals.version,
+    author: "Mateus V. Torres",
+    contact: "mtsvtorres@gmail.com",
   });
 }
 
